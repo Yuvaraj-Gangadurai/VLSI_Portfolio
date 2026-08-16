@@ -34,8 +34,7 @@ begin
 // Full Logic
 always @(*)
 begin
-    if ((wr_ptr[PTR_WIDTH-1:0] == rd_ptr[PTR_WIDTH-1:0]) &&
-        (wr_ptr[PTR_WIDTH] != rd_ptr[PTR_WIDTH]))
+    if ((wr_ptr[PTR_WIDTH-1:0] == rd_ptr[PTR_WIDTH-1:0]) && (wr_ptr[PTR_WIDTH] != rd_ptr[PTR_WIDTH]))
         full = 1'b1;
     else
         full = 1'b0;
