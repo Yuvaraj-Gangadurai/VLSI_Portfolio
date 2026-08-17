@@ -1,0 +1,6 @@
+# Icarus Verilog compiled simulation files
+fifo_sim
+fifo_tb_sim
+
+# Waveform files
+*.vcd
