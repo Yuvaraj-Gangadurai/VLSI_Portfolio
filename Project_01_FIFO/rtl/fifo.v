@@ -12,7 +12,7 @@ module fifo
     input wire [DATA_WIDTH-1:0] wr_data,
     output reg [DATA_WIDTH-1:0] rd_data,
     output reg full,
-    output reg empty
+    output reg empty 
 );
 
 localparam PTR_WIDTH = $clog2(FIFO_DEPTH);    // paramaterized
@@ -29,7 +29,7 @@ begin
         empty = 1'b1;
     else
         empty = 1'b0;
-
+end
 
 // Full Logic
 always @(*)
