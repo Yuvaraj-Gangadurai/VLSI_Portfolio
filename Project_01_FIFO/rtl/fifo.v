@@ -47,7 +47,7 @@ end
 // FIFO Operations
 always @(posedge clk)
 begin
-    if (rst)
+    if (rst_n)
     begin
         wr_ptr  <= 0;
         rd_ptr  <= 0;
