@@ -62,10 +62,28 @@ Create the parameterized FIFO module interface.
 ### Current Status
 Core FIFO RTL logic has been written. Compilation and simulation are pending because Icarus Verilog is not yet configured.
 
-### Next Steps
-- Install/configure Icarus Verilog.
-- Compile `fifo.v`.
-- Create `fifo_tb.v`.
-- Test reset, write, read, EMPTY, and FULL conditions.
-- Test simultaneous read/write operation.
-- Run simulation and verify the FIFO.
+# Day 4 – RTL Simulation and Verification
+
+## Tasks Completed
+
+- Installed Icarus Verilog on Windows.
+- Configured and verified the Icarus Verilog installation.
+- Compiled the FIFO RTL successfully.
+- Created a Verilog testbench (`fifo_tb.v`).
+- Verified basic FIFO write operation.
+- Verified FIFO read operation.
+- Verified the EMPTY condition.
+- Verified the FULL condition by filling all 16 FIFO locations.
+- Verified simultaneous write and read operation.
+- Confirmed that FIFO data follows the correct First-In First-Out order.
+- Added a `.gitignore` file to prevent generated simulation and waveform files from being uploaded to GitHub.
+- Updated the FIFO project documentation with `README.md`.
+
+## Simulation Results
+
+### Basic Write and Read
+
+Successfully wrote and read the following values:
+
+```text
+10 → 20 → 30 → 40
